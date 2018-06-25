@@ -68,7 +68,7 @@
 }
 
 #chart_county, #chart_ea {
-    background: #FDCF89;
+    background: #fff;
 }
 .map-loading::after {
   /* content: "";
