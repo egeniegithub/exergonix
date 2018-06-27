@@ -26,6 +26,21 @@
     <link href="../assets/node_modules/ion-rangeslider/css/ion.rangeSlider.skinModern.css" rel="stylesheet">
     <link href="../assets/node_modules/bootstrap-switch/bootstrap-switch.min.css" rel="stylesheet">
     <link href="../assets/node_modules/nestable/nestable.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #curtain {
+          background: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          font-size: 25px;
+        }
+
+        #curtain span {
+          display: block;
+          position: absolute;
+          top: 49%;
+          width: 100%;
+          text-align: center;
+        }
+    </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -612,8 +627,16 @@
                                         </p>
 
                                         <div id="chart_city" class="map_area"></div>
-                                        <div id="chart_county" class="map_area"></div>
-                                        <div id="chart_ea" class="map_area"></div>
+                                        <div id="chart_county" class="map_area">
+                                            <div id="curtain">
+                                                <span>Counties map is loading...</span>
+                                            </div>
+                                        </div>
+                                        <div id="chart_ea" class="map_area">
+                                            <div id="curtain">
+                                                <span>EA map is loading...</span>
+                                            </div>
+                                        </div>
                                         <div id="chart_state" class="map_area"></div>
                                         <div class="clearfix"></div><br>
                                         <div class="row">
@@ -762,6 +785,7 @@
     <script src="dist/js/jsnetworkx.js"></script>
     <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
     <script src="https://www.amcharts.com/lib/3/maps/js/usaLow.js"></script>
+    <script src="dist/js/us-counties/js/usCounties2.js"></script>
     <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"></script>
 
 
