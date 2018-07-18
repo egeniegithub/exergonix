@@ -58,16 +58,13 @@
   font-size: 12px !important;
 }
 
-.map_area:not(#chart_ea_coantainer) {
-  min-height: 500px;
+
+.map_area {
+  height: 500px;
   width:100%;
   display: none;
   position: relative;
   margin-top: 30px;
-}
-#chart_ea_coantainer .amcharts-legend-div{
-    margin-top: 40px;
-    position: relative;
 }
 
 #chart_county, #chart_ea {
